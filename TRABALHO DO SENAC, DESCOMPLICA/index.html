@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Site Explicativo - Estilo Cartoon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #7ec8ff, #eaf7ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      height: 750px;
+    }
+
+    /* Avatar */
+    .avatar {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffd56b, #ffb703);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translate(-50%, -50%) translateY(0); }
+      50% { transform: translate(-50%, -50%) translateY(-10px); }
+      100% { transform: translate(-50%, -50%) translateY(0); }
+    }
+
+    /* Nuvens */
+    .cloud {
+      position: absolute;
+      width: 170px;
+      height: 95px;
+      background: #ffffff;
+      border-radius: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 38px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: cloudFloat 4s ease-in-out infinite;
+    }
+
+    .cloud:hover {
+      transform: scale(1.12);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+    }
+
+    @keyframes cloudFloat {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Posições */
+    .c1 { top: 4%; left: 42%; }
+    .c2 { top: 18%; left: 8%; }
+    .c3 { top: 18%; right: 8%; }
+    .c4 { top: 44%; left: 0%; }
+    .c5 { top: 44%; right: 0%; }
+    .c6 { bottom: 18%; left: 12%; }
+    .c7 { bottom: 18%; right: 12%; }
+    .c8 { bottom: 4%; left: 42%; }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Título escolar */
+    .title {
+      position: absolute;
+      top: -70px;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: #0a3d62;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      color: #1e6091;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .container {
+        transform: scale(0.85);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="title">
+      Site Explicativo Interativo
+      <div class="subtitle">Clique nas nuvens para entender cada tema</div>
+    </div>
+
+    <!-- Avatar -->
+    <div class="avatar">AVATAR</div>
+
+    <!-- Nuvens -->
+    <a href="formulario.html" target="_blank"><div class="cloud c1">📄</div></a>
+    <a href="marmita.html" target="_blank"><div class="cloud c2">🍱🧽</div></a>
+    <a href="duvida.html" target="_blank"><div class="cloud c3">❓</div></a>
+    <a href="onibus.html" target="_blank"><div class="cloud c4">🚌</div></a>
+    <a href="calendario.html" target="_blank"><div class="cloud c5">📅</div></a>
+    <a href="wifi.html" target="_blank"><div class="cloud c6">📶</div></a>
+    <a href="grupo.html" target="_blank"><div class="cloud c7">👥</div></a>
+    <a href="celular.html" target="_blank"><div class="cloud c8">📱</div></a>
+
+  </div>
+</body>
+</html>

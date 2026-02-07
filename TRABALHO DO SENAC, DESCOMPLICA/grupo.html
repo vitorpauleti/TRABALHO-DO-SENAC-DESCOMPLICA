@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Integração entre Alunos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #7ec8ff, #eaf7ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 720px;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .icon {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0a3d62;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .highlight {
+      background: #e8f5e9;
+      padding: 18px;
+      border-radius: 15px;
+      margin-top: 25px;
+      font-weight: 600;
+      color: #1b5e20;
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      margin: 30px auto 0;
+      background: #ffb703;
+      color: #333;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      width: fit-content;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon">👥</div>
+
+    <h1>Integração e Trabalho em Grupo</h1>
+
+    <p>
+      Durante o curso, é importante não permanecer sempre no mesmo lugar
+      ou apenas com as mesmas pessoas.
+    </p>
+
+    <p>
+      A troca de experiências com diferentes colegas contribui para o aprendizado,
+      melhora a convivência e prepara o aluno para situações do ambiente profissional.
+    </p>
+
+    <div class="highlight">
+      👉 Não passe o curso sentado no mesmo lugar.  
+      Procure conhecer e realizar atividades com outros alunos.
+    </div>
+
+    <a href="index.html" class="btn">⬅ Voltar para o início</a>
+  </div>
+
+</body>
+</html>
